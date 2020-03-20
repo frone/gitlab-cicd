@@ -10,7 +10,7 @@ docker-deploy:
 # 删除已经在运行的容器
     - if [ $(docker ps -aq --filter name= testgolang) ]; then docker rm -f testgolang;fi
 # 通过镜像启动容器，并把本机8001端口映射到容器8001端口
-    - docker run -d -p 8001:8001 --name testgolang testgolang
+    - docker run -d -p 5005:8001 --name testgolang testgolang
   tags:
 # 执行Job的服务器
     - mbp13
