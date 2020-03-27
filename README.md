@@ -1,4 +1,7 @@
-### gitlab-cicd
+# gitlab-cicd
+
+## 本项目用来记录学习gitlab相关功能，相关文档记录于此
+
 `快速掌握并使用gitlab-ci工具快速代码编译、集成和发布`
 
 [课程学习源码和文档](https://github.com/yangshun2005/gitlab-cicd)
@@ -38,7 +41,8 @@
 
 2. 装有`docker`和`gitlab-runner`环境的云服务器（这里用到CentOS 7 64位）
 > gitlab-runner安装方法:
->> https://docs.gitlab.com/runner/install/osx.html
+>
+> > https://docs.gitlab.com/runner/install/osx.html
 
 3. 项目代码，这里我使用Golang作为开发语言，其它开发语言也一样的操作流程
 ![img](./imgs/WX20200226-162255@2x.png)
@@ -100,11 +104,12 @@ docker-deploy:
 ![img](./imgs/WX20200226-163220@2x.png)
 
 > 在runner机器上设置
-`实际就是runner要向gitlab服务发起register`
->> https://docs.gitlab.com/runner/register/index.html
+> `实际就是runner要向gitlab服务发起register`
+>
+> > https://docs.gitlab.com/runner/register/index.html
 
 ![img](./imgs/WX20200226-161907@2x.png)
- 
+
 > 补充：
 
 ```
